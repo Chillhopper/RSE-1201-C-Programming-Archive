@@ -1,0 +1,5 @@
+make
+./q.out grades1.txt myoutput1.txt
+./q.out grades2.txt myoutput2.txt
+./q.out grades3.txt myoutput3.txt
+./q.out grades3.txt myoutput4.txt

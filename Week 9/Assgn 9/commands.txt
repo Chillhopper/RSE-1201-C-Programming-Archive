@@ -1,0 +1,5 @@
+gcc -Wall -Wextra -Wconversion -Wstrict-prototypes -Werror -pedantic-errors -std=c11 -o main gamelib.c qdriver.c
+
+gcc -o main gamelib.c qdriver.c
+
+./main < input.txt > actual-output.txt

@@ -1,0 +1,6 @@
+gcc -DUSE_STRING -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic -std=c11 -o main main.c q.c
+./main > actual-output.txt 
+diff actual-output.txt expected-output.txt --strip-trailing-cr
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic -std=c11-o main main.c q.c my_string.c
+./main > actual-output.txt

@@ -1,0 +1,9 @@
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o q.out qdriver.c q.c
+./q.out input1.txt
+./q.out input1.txt > output.txt
+
+
+
+
+
+

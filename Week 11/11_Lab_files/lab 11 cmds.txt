@@ -1,0 +1,3 @@
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o main main.c q.c
+./main > actual-output.txt
+diff actual-output.txt expected-output.txt --strip-trailing-cr
