@@ -1,0 +1,3 @@
+Max of 100 is 600
+Min of 100 is 500
+Avg of 100 is 550.00

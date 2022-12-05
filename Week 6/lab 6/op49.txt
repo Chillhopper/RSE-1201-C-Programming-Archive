@@ -1,0 +1,3 @@
+Max of 49 is 600
+Min of 49 is 500
+Avg of 49 is 548.98

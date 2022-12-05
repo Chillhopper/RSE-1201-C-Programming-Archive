@@ -1,0 +1,49 @@
+This program evaluates mathematical expressions.
+The format of an expression is:
+	OPERAND1 SYMBOL OPERAND2
+Available operation symbols:
+	+ addition
+	- subtraction
+	* multiplication
+	/ division
+	\ integer division
+	% modulus
+
+Enter an expression:
+		9.500000
+Enter an expression:
+		0.000000
+Enter an expression:
+		-5.500000
+Enter an expression:
+		0.000000
+Enter an expression:
+		-0.750000
+Enter an expression:
+		0.000000
+Enter an expression:
+		3.000000
+Enter an expression:
+		3.500000
+Enter an expression:
+		Division by 0!
+Enter an expression:
+		3.000000
+Enter an expression:
+		3.000000
+Enter an expression:
+		Division by 0!
+Enter an expression:
+		1.000000
+Enter an expression:
+		1.000000
+Enter an expression:
+		Division by 0!
+Enter an expression:
+		Unknown operation selected!
+Enter an expression:
+		Invalid number of arguments!
+Enter an expression:
+		-10.000000
+Enter an expression:
+	Closing the program...
