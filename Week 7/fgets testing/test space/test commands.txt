@@ -1,0 +1,18 @@
+Encryption commands:
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -DENCRYPT -c -o ving.o ving.c
+
+gcc ving.o -o encrypter
+./encrypter 1> actual-output.txt 2>> actual-output.txt
+---------------------------------------------------------------------------------------*/
+Decryption commands:
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -c -o ving.o ving.c
+
+gcc ving.o -o decrypter
+./decrypter 1>> actual-output.txt 2>> actual-output.txt
+
+cat out_plain.txt >> actual-output.txt
+---------------------------------------------------------------------------------------*/
+Test commands
+

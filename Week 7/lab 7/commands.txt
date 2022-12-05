@@ -1,0 +1,68 @@
+test 0
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o test0 test0.c utils.c
+
+./test0 < input-test0-0.txt > actual-output-test0-0.txt
+diff actual-output-test0-0.txt expected-output-test0-0.txt --strip-trailing-cr
+
+./test0 < input-test0-1.txt > actual-output-test0-1.txt
+diff actual-output-test0-1.txt expected-output-test0-1.txt --strip-trailing-cr
+
+./test0 < input-test0-2.txt > actual-output-test0-2.txt
+diff actual-output-test0-2.txt expected-output-test0-2.txt --strip-trailing-cr
+
+./test0 < input-test0-3.txt > actual-output-test0-3.txt
+diff actual-output-test0-3.txt expected-output-test0-3.txt --strip-trailing-cr
+
+
+test 1
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o test1 test1.c utils.c
+
+./test1 < input-test1-4.txt > actual-output-test1-4.txt
+diff actual-output-test1-4.txt expected-output-test1-4.txt --strip-trailing-cr
+
+./test1 < input-test1-5.txt > actual-output-test1-5.txt
+diff actual-output-test1-5.txt expected-output-test1-5.txt --strip-trailing-cr
+
+test 2
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o test2 test2.c utils.c
+
+./test2 < input-test2-6.txt > actual-output-test2-6.txt
+diff actual-output-test2-6.txt expected-output-test2-6.txt --strip-trailing-cr
+
+./test2 < input-test2-7.txt > actual-output-test2-7.txt
+diff actual-output-test2-7.txt expected-output-test2-7.txt --strip-trailing-cr
+
+
+test 3
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o test3 test3.c utils.c
+./test3 < input-test3-8.txt > actual-output-test3-8.txt
+diff actual-output-test3-8.txt expected-output-test3-8.txt --strip-trailing-cr
+
+./test3 < input-test3-11.txt > actual-output-test3-11.txt
+diff actual-output-test3-11.txt expected-output-test3-11.txt --strip-trailing-cr
+
+test 4
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o test4 test4.c utils.c
+
+./test4 < input-test4-12.txt > actual-output-test4-12.txt
+diff actual-output-test4-12.txt expected-output-test4-12.txt --strip-trailing-cr
+
+./test4 < input-test4-13.txt > actual-output-test4-13.txt
+diff actual-output-test4-13.txt expected-output-test4-13.txt --strip-trailing-cr
+
+big shot
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -o third_largest third_largest.c utils.c
+./third_largest < input-third_largest-18.txt > actual-output-third_largest-18.txt
+diff actual-output-third_largest-18.txt expected-output-third_largest-18.txt --strip-trailing-cr
+
+./third_largest < input-third_largest-20.txt > actual-output-third_largest-20.txt
+diff actual-output-third_largest-20.txt expected-output-third_largest-20.txt --strip-trailing-cr
+
+./third_largest < input-third_largest-21.txt > actual-output-third_largest-21.txt
+diff actual-output-third_largest-21.txt expected-output-third_largest-21.txt --strip-trailing-cr
+
+./third_largest < input-third_largest-22.txt > actual-output-third_largest-22.txt
+diff actual-output-third_largest-22.txt expected-output-third_largest-22.txt --strip-trailing-cr
+
+

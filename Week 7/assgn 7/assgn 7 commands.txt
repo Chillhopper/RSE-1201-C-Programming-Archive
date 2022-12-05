@@ -1,0 +1,51 @@
+Encryption commands:
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -c -o q.o q.c
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -DENCRYPT -c -o main.o main.c
+
+gcc q.o main.o -o encrypter
+./encrypter 1> actual-output.txt 2>> actual-output.txt
+---------------------------------------------------------------------------------------*/
+Decryption commands:
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -c -o main.o main.c
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -c -o q.o q.c
+
+gcc q.o main.o -o decrypter
+./decrypter 1>> actual-output.txt 2>> actual-output.txt
+
+cat out_plain.txt >> actual-output.txt
+---------------------------------------------------------------------------------------*/
+Test commands
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -c -o q.o q.c
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -DENCRYPT -c -o main.o main.c
+
+gcc q.o main.o -o encrypter
+
+./encrypter 1> actual-output.txt 2>> actual-output.txt
+
+gcc -Wall -Werror -Wextra -Wconversion -Wstrict-prototypes -pedantic-errors -std=c11 -c -o main.o main.c
+
+gcc q.o main.o -o decrypter
+
+./decrypter 1>> actual-output.txt 2>> actual-output.txt
+
+cat out_plain.txt >> actual-output.txt
+
+
+---------------------------------------------------------------------------------------*/
+comparison commands
+
+diff --strip-trailing-cr expected-plain.txt out_plain.txt
+
+diff --strip-trailing-cr expected-cipher.txt cipher.txt
+
+diff --strip-trailing-cr expected-output.txt actual-output.txt
+
+
+
+
+
